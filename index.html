@@ -1,171 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<!-- favicon stuff -->
-	<meta name="google-adsense-account" content="ca-pub-8637007400255158">
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-	<!-- end favicon stuff -->
-
-	
-	<link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Helldivers 2 Loadout Randomizer</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-3DGGPX7WDL"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	
-	  gtag('config', 'G-3DGGPX7WDL');
-	</script>
-	<link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
-	<style>
-	
-		.container {
-			background: rgba(0, 0, 0, 0.7);
-			padding: 20px;
-			border-radius: 10px;
-		}
-		.slot {
-			width: 100px;
-			height: 100px;
-			background-color: rgba(255, 255, 255, 0.2);
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			margin: 2px;
-			border-radius: 10px;
-		}
-	</style>
-</head>
-<body>
-	<aside class="ad-container">
-        <!-- Your AdSense ad code here -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <aside class="ad-container">
+      <!-- Your AdSense ad code here -->
     </aside>
+
     <div class="container">
-		<div class="updated">
-			<ul>
-<li>
-			
-			07 August 2024 - added <b>Freedoms Flame Warbond</b></li>
-			<li>	Last update: 03 September 2024 - added <b>Require Anti-Tank Option</b></li>
-				</ul>
-		</div>
-        <header class="header">
-            <h1>Welcome to the Helldivers 2<br>Loadout Randomizer</br></h1>
-        </header>
-        <main>
-			<div class="options-wrapper">
-				<section class="stratagem-section">
-					<h2 id="h2_sections">Stratagems</h2>
-					<div class="checkbox-group">
-						<div class="custom-checkbox">
-						<input type="checkbox" id="option1" class="stratagem_type" value="Support" checked>
-						<label for="option1">Support Weapon</label>
-						<input type="checkbox" id="option2" class="stratagem_type" value="Backpack" checked>
-						<label for="option2">Backpack</label>
-						<div class="custom-checkbox">
-						<input type="checkbox" id="option3" class="stratagem_type" value="Offensive" checked>
-						<label for="option3">Offensive</label>
-						<input type="checkbox" id="option4" class="stratagem_type" value="Defensive" checked>
-						<label for="option4">Defensive</label>
-						</div>
-					</div>
-					<div class="checkbox-group">
-						<label for="Antitank" >At Least 1 Anti-Tank option at or above</label>
-						<select style="color:black" id="Antitank">
-							
-						</select>
-					</div>
-				</section>
-				<section class="equipment-section">
-					<h2 id="h2_sections">Equipment</h2>
-					<div class="checkbox-group">
-						<div class="custom-checkbox">
-						<input type="checkbox" id="primary" class="stratagem_type" value="Primary">
-						<label for="primary">Primary</label>
-						<input type="checkbox" id="secondary" class="stratagem_type" value="Secondary">
-						<label for="secondary">Secondary</label>
-					<div class="custom-checkbox">
-						<input type="checkbox" id="grenade" class="stratagem_type" value="Grenade">
-						<label for="grenade">Grenade</label>
-						<input type="checkbox" id="armor" class="stratagem_type" value="Armor">
-						<label for="armor">Armor</label>
-						<input type="checkbox" id="booster" class="stratagem_type" value="Booster">
-						<label for="booster">Booster</label>
-						</div>
-					</div>
-				</section>
-			</div>
-			<div class="options-wrapper">
-				<section class="options-section">
-					<h2 id="h2_sections">Randomizer</h2>
-					<div class="checkbox-group">
-						<div class="custom-checkbox">
-							<input type="checkbox" id="option_support" value="Single Support Weapon" checked>
-							<label for="option_support">Single Support Weapon</label>
-							<input type="checkbox" id="option_singleback" value="Single Backpack" checked>
-							<label for="option_singleback">Single Backpack</label>
-				
-						</div>
-					</div>
-				</section>
-				<section class="additional-section">
-					<h2 id="h2_sections">Warbonds</h2>
-					<div class="checkbox-group">
-						<div class="custom-checkbox" id="Warbond-Selector">
-							<input type="checkbox" id="warbond_default" value="Helldivers Mobilize" checked>
-							<label for="warbond_default">Helldivers Mobilize</label>
-							<input type="checkbox" id="warbond_steeled" value="Steeled Veterans">
-							<label for="warbond_steeled">Steeled Veterans</label>
-							<input type="checkbox" id="warbond_cutting" value="Cutting Edge">
-							<label for="warbond_cutting">Cutting Edge</label>
-							<input type="checkbox" id="warbond_democratic" value="Democratic Detonation">
-							<label for="warbond_democratic">Democratic Detonation</label>
-							<input type="checkbox" id="warbond_polar" value="Polar Patriot">
-							<label for="warbond_polar">Polar Patriot</label>
-							<input type="checkbox" id="warbond_commando" value="Viper Commandos">
-							<label for="warbond_commando">Viper Commandos</label>
-							<input type="checkbox" id="warbond_flame" value="Freedoms Flame">
-							<label for="warbond_flame">Freedoms Flame</label>
-							<input type="checkbox" id="warbond_super" value="Super Citizen">
-							<label for="warbond_super">Super Citizen</label>
-						</div>
-					</div>
-				</section>
-			</div>
-	
-		
+      <div class="updated">
+        <ul>
+          <li>07 August 2024 - added <b>Freedoms Flame Warbond</b></li>
+          <li>
+            Last update: 03 September 2024 - added
+            <b>Require Anti-Tank Option</b>
+          </li>
+        </ul>
+      </div>
 
-            <button id="randomizeButton" class="rand">Randomize Loadout</button>
-			<!--
-			<div>
-				<a href="settings.html" class="settings-link" title="Settings">
-					<h1>&#x2699</h1>
-				</a>
-			</div>
-            -->
-			<section id="results-section">
-                <div id="resultHeader">Helldiver, wait for random loadout assignment!</div>
-                <div id="resultField" contenteditable="true"></div>
-					
-	
+      <header class="header">
+        <h1>Welcome to the Helldivers 2<br />Loadout Randomizer</h1>
+      </header>
 
-            </section>
-        </main>
+      <main>
+        <div class="options-wrapper">
+          <section class="stratagem-section">
+            <h2 id="h2_sections">Stratagems</h2>
+            <div class="checkbox-group">
+              <div class="custom-checkbox">
+                <input
+                  type="checkbox"
+                  id="option1"
+                  class="stratagem_type"
+                  value="Support"
+                  checked
+                />
+                <label for="option1">Support Weapon</label>
+              </div>
+              <div class="custom-checkbox">
+                <input
+                  type="checkbox"
+                  id="option2"
+                  class="stratagem_type"
+                  value="Backpack"
+                  checked
+                />
+                <label for="option2">Backpack</label>
+              </div>
+              <div class="custom-checkbox">
+                <input
+                  type="checkbox"
+                  id="option3"
+                  class="stratagem_type"
+                  value="Offensive"
+                  checked
+                />
+                <label for="option3">Offensive</label>
+              </div>
+              <div class="custom-checkbox">
+                <input
+                  type="checkbox"
+                  id="option4"
+                  class="stratagem_type"
+                  value="Defensive"
+                  checked
+                />
+                <label for="option4">Defensive</label>
+              </div>
+            </div>
+            <div class="checkbox-group">
+              <label for="Antitank"
+                >At Least 1 Anti-Tank option at or above</label
+              >
+              <select style="color: black" id="Antitank">
+                <!-- Options here -->
+              </select>
+            </div>
+          </section>
+
+          <section class="equipment-section">
+            <h2 id="h2_sections">Equipment</h2>
+            <div class="checkbox-group">
+              <div class="custom-checkbox">
+                <input
+                  type="checkbox"
+                  id="primary"
+                  class="stratagem_type"
+                  value="Primary"
+                />
+                <label for="primary">Primary</label>
+              </div>
+              <div class="custom-checkbox">
+                <input
+                  type="checkbox"
+                  id="secondary"
+                  class="stratagem_type"
+                  value="Secondary"
+                />
+                <label for="secondary">Secondary</label>
+              </div>
+              <div class="custom-checkbox">
+                <input
+                  type="checkbox"
+                  id="grenade"
+                  class="stratagem_type"
+                  value="Grenade"
+                />
+                <label for="grenade">Grenade</label>
+              </div>
+              <div class="custom-checkbox">
+                <input
+                  type="checkbox"
+                  id="armor"
+                  class="stratagem_type"
+                  value="Armor"
+                />
+                <label for="armor">Armor</label>
+              </div>
+              <div class="custom-checkbox">
+                <input
+                  type="checkbox"
+                  id="booster"
+                  class="stratagem_type"
+                  value="Booster"
+                />
+                <label for="booster">Booster</label>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="options-wrapper">
+          <section class="options-section">
+            <h2 id="h2_sections">Randomizer</h2>
+            <div class="checkbox-group">
+              <div class="custom-checkbox">
+                <input
+                  type="checkbox"
+                  id="option_support"
+                  value="Single Support Weapon"
+                  checked
+                />
+                <label for="option_support">Single Support Weapon</label>
+              </div>
+              <div class="custom-checkbox">
+                <input
+                  type="checkbox"
+                  id="option_singleback"
+                  value="Single Backpack"
+                  checked
+                />
+                <label for="option_singleback">Single Backpack</label>
+              </div>
+            </div>
+          </section>
+
+          <section class="additional-section">
+            <h2 id="h2_sections">Warbonds</h2>
+            <div class="checkbox-group">
+              <div class="custom-checkbox" id="Warbond-Selector">
+                <input
+                  type="checkbox"
+                  id="warbond_default"
+                  value="Helldivers Mobilize"
+                  checked
+                />
+                <label for="warbond_default">Helldivers Mobilize</label>
+                <input
+                  type="checkbox"
+                  id="warbond_steeled"
+                  value="Steeled Veterans"
+                />
+                <label for="warbond_steeled">Steeled Veterans</label>
+                <input
+                  type="checkbox"
+                  id="warbond_cutting"
+                  value="Cutting Edge"
+                />
+                <label for="warbond_cutting">Cutting Edge</label>
+                <input
+                  type="checkbox"
+                  id="warbond_democratic"
+                  value="Democratic Detonation"
+                />
+                <label for="warbond_democratic">Democratic Detonation</label>
+                <input
+                  type="checkbox"
+                  id="warbond_polar"
+                  value="Polar Patriot"
+                />
+                <label for="warbond_polar">Polar Patriot</label>
+                <input
+                  type="checkbox"
+                  id="warbond_commando"
+                  value="Viper Commandos"
+                />
+                <label for="warbond_commando">Viper Commandos</label>
+                <input
+                  type="checkbox"
+                  id="warbond_flame"
+                  value="Freedoms Flame"
+                />
+                <label for="warbond_flame">Freedoms Flame</label>
+                <input
+                  type="checkbox"
+                  id="warbond_super"
+                  value="Super Citizen"
+                />
+                <label for="warbond_super">Super Citizen</label>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <button id="randomizeButton" class="rand">Randomize Loadout</button>
+
+        <section id="results-section">
+          <div id="resultHeader">
+            Helldiver, wait for random loadout assignment!
+          </div>
+          <div id="resultField" contenteditable="true"></div>
+        </section>
+      </main>
     </div>
+
     <script type="module" src="mainscript.js"></script>
-
-	
-	<canvas id="loadoutCanvas" width="800" height="300"></canvas>
-
-	
-</body>
+    <canvas id="loadoutCanvas" width="800" height="300"></canvas>
+  </body>
 </html>
