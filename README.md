@@ -18,7 +18,7 @@ Clone to server and host, site will be prevented from working locally due to COR
 To Update source data edit src/content.js using the following format.
 
 Stratagems
-A Stratagem is a tactical action that players can utilize during gameplay. Stratagems generally have attributes such as name, type, advanced status, sequence of actions, icon path, and Highest Armor Penetration).
+A Stratagem is a tactical action that players can utilize during gameplay. Stratagems generally have attributes such as name, type, advanced status, sequence of actions, icon path, and Highest Armor Penetration (Classified by the Letters L,M,H followed by a number 1-9). eg. Rail Cannon stike is currently the Highest with a H6 Class Armor Penetration max.
 
 Adding a New Stratagem
 To add a new stratagem to the stratagems array, you can follow this pattern:

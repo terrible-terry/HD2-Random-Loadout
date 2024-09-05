@@ -1,6 +1,6 @@
 import { stratagems, warbonds } from "./src/content.js";
 import { changeBackground } from "./src/misc.js";
-const Antitank = document.getElementById("Antitank");
+const ArmorPen = document.getElementById("ArmorPen");
 const outputLoadout = { Strats: [], Weapon: "" };
 const outputLoadoutHTML = {};
 var weaponJSON = {};
@@ -16,9 +16,7 @@ function getNumericValue(str) {
 
   const letter = str[0];
   const number = parseInt(str.slice(1), 10);
-
   const letterValue = letterValueMap[letter];
-
   if (letterValue !== undefined && !isNaN(number)) {
     return letterValue + number;
   } else {
@@ -167,7 +165,7 @@ document
     const isArmor = document.getElementById("armor").checked;
     const isBooster = document.getElementById("booster").checked;
 
-    const lowestAT = getNumericValue(Antitank.value);
+    const lowestAT = getNumericValue(ArmorPen.value);
     //check at least defensive or offensive box if single backpack and support weapon is activated
     if (isSingleBackpack && isSingleSupport) {
       if (
@@ -419,7 +417,7 @@ uniqueAtValues.forEach((element) => {
 
   // Create and append option
   let item = new Option(description, element);
-  Antitank.append(item);
+  ArmorPen.append(item);
 });
 function randomizeStrategems(strats, n_out) {
   shuffleArray(strats);
