@@ -100,6 +100,16 @@ async function logStratagems() {
       iconPath: "./assets/Strat_icons/OFFENSIVE (6).png",
       AT: "H1",
     },
+
+    {
+      name: "Orbiatal Napalm Barrage",
+      isAdvanced: false,
+      type: "Offensive",
+      sequence: ["C_RIGHT", "C_RIGHT", "C_DOWN", "C_LEFT", "C_RIGHT", "C_UP"],
+      iconPath: "./assets/Orbital_Napalm_Barrage_Stratagem_Icon.png",
+      AT: "H1",
+    },
+
     {
       name: "Eagle Smoke Strike",
       isAdvanced: false,
@@ -485,6 +495,7 @@ logStratagems();
 export const warbonds = {
   steeled: {
     name: "Steeled Veterans",
+    stratagems:[],
     primary: [
       new Equipment(
         "AR23C-Liberator CONC",
@@ -561,6 +572,7 @@ export const warbonds = {
   },
   cutting: {
     name: "Cutting Edge",
+    stratagems:[],
     primary: [
       new Equipment(
         "LAS-16 Sickle",
@@ -637,6 +649,7 @@ export const warbonds = {
   },
   democratic: {
     name: "Democratic Detonation",
+    stratagems:[],
     primary: [
       new Equipment(
         "BR-14 Adjudicator",
@@ -713,6 +726,7 @@ export const warbonds = {
   },
   polar: {
     name: "Polar Patriots",
+    stratagems:[],
     primary: [
       new Equipment(
         "AR-61 Tenderizer",
@@ -789,6 +803,7 @@ export const warbonds = {
   },
   commando: {
     name: "Viper Commandos",
+    stratagems:[],
     primary: [
       new Equipment(
         "AR-23A Liberator Carbine",
@@ -844,6 +859,7 @@ export const warbonds = {
   },
   flame: {
     name: "Freedoms Flame",
+    stratagems:[],
     primary: [
       new Equipment(
         "SG-451 Cookout",
@@ -896,8 +912,62 @@ export const warbonds = {
       ),
     ],
   },
+  chem: {
+    name: "Chemical Agents",
+    primary: [],
+    secondary: [],
+    grenade: [
+      new Equipment(
+        "P-11 Stim Pistol",
+        "Grenade",
+        "Flame",
+        "chem",
+        "./assets/P-72_Crisper_Weapon_Icon.png"
+      ),
+      new Equipment(
+        "G4 Gas Grenade",
+        "Grenade",
+        "Gas",
+        "chem",
+        "./assets/P-72_Crisper_Weapon_Icon.png"
+      ),
+    ],
+    armor: [
+      new Equipment(
+        "AF-02 Haz-Master",
+        "Armor",
+        "Medium",
+        "chem",
+        "./assets/AF-02_Haz-Master_Armor_Icon.png"
+      ),
+      new Equipment(
+        "AF-50 Noxious Ranger",
+        "Armor",
+        "Light",
+        "chem",
+        "./assets/AF-50_Noxious_Ranger_Armor_Icon.png"
+      ),
+    ],
+    booster: [
+    ],
+    stratagems:[      new Stratagem(
+      "TX-41 Sterilizer",
+      false,
+      "Support",
+      "chem",
+      "./assets/Sterilizer_Stratagem_Icon.png"
+    ),
+    new Stratagem(
+      "AX/TX-13 “Guard Dog” Dog Breath",
+      true,
+      "Support",
+      "chem",
+      "./assets/Guard_Dog_Dog_Breath_Stratagem_Icon.png"
+    ),],
+  },
   super: {
     name: "Super Citizen",
+    stratagems:[],
     primary: [
       new Equipment(
         "MP-98 Knight",
@@ -922,6 +992,7 @@ export const warbonds = {
   },
   default: {
     name: "Helldivers Mobilize",
+    stratagems:[],
     primary: [
       new Equipment(
         "AR23-Liberator",
