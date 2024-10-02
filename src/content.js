@@ -908,7 +908,7 @@ export const warbonds = {
         false,
         "booster",
         "flame",
-        "./assets/130px-Experimental_Infusion_Booster_Icon.png"
+        "./assets/Firebomb_Hellpods_Booster_Icon.png"
       ),
     ],
   },
@@ -922,7 +922,7 @@ export const warbonds = {
         "Grenade",
         "Flame",
         "chem",
-        "./assets/P-72_Crisper_Weapon_Icon.png"
+        "./assets/P-11_Stim_Pistol_Weapon_Icon.png"
       ),
       new Equipment(
         "G4 Gas Grenade",
