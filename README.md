@@ -94,9 +94,17 @@ warbonds.new_warbond = {
             "./path/to/icon.png"
         ),
     ],
+    stratagems: [      
+        new Stratagem(
+      "TX-41 Sterilizer",
+      false,
+      "Support",
+      "new_warbond",
+      "./assets/Sterilizer_Stratagem_Icon.png"
+    ),]
 };
 ```
 
 Existing Warbonds
-The library already includes several predefined warbonds categorized under themes such as "Steeled Veterans", "Cutting Edge", "Democratic Detonation", and more. You can view or modify these warbonds as needed.
+The library already includes several predefined warbonds categorized under themes such as "Steeled Veterans", "Cutting Edge", "Democratic Detonation","Polar Patriots", "Viper Commandos", "Freedoms Flame", and "Chemical Agents". You can view or modify these warbonds as needed.
 
