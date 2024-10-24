@@ -929,7 +929,7 @@ export const warbonds = {
         "Grenade",
         "Gas",
         "chem",
-        "./assets/P-72_Crisper_Weapon_Icon.png"
+        "./assets/G-4-Gas_Grenade_Icon.png"
       ),
     ],
     armor: [
