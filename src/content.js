@@ -915,15 +915,15 @@ export const warbonds = {
   chem: {
     name: "Chemical Agents",
     primary: [],
-    secondary: [],
+    secondary: [      new Equipment(
+      "P-11 Stim Pistol",
+      "Grenade",
+      "Flame",
+      "chem",
+      "./assets/P-11_Stim_Pistol_Weapon_Icon.png"
+    ),],
     grenade: [
-      new Equipment(
-        "P-11 Stim Pistol",
-        "Grenade",
-        "Flame",
-        "chem",
-        "./assets/P-11_Stim_Pistol_Weapon_Icon.png"
-      ),
+
       new Equipment(
         "G4 Gas Grenade",
         "Grenade",
@@ -964,6 +964,37 @@ export const warbonds = {
       "chem",
       "./assets/Guard_Dog_Dog_Breath_Stratagem_Icon.png"
     ),],
+  },
+  truth: {
+    name: "Truth Enforcers",
+    primary: [new Equipment(
+      "SMG-32 Reprimand",
+      "Primary",
+      "Smg",
+      "truth",
+      "./assets/320px-SMG-32_Reprimand_Weapon_Icon.png"
+    ),new Equipment(
+      "SG-20 Halt",
+      "Primary",
+      "Shotgun",
+      "truth",
+      "./assets/SG-20_Halt_Weapon_Icon.png"
+    )],
+    secondary: [
+      new Equipment(
+      "PLAS-15 Loyalist",
+      "Secondary",
+      "Truth",
+      "truth",
+      "./assets/320px-PLAS-15_Loyalist_Weapon_Icon.png"
+    ),],
+    grenade: [
+    ],
+    armor: [
+    ],
+    booster: [
+    ],
+    stratagems:[],
   },
   super: {
     name: "Super Citizen",
