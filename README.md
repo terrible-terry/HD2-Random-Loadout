@@ -4,7 +4,7 @@ HellDivers 2 Random Loadout Generator
 <p align="center">
      <a href="https://terrible-terry.github.io/HD2-Random-Loadout/"><img width="80%" src="https://terrible-terry.github.io/HD2-Random-Loadout/screenshot.png"></a>
 </p>
-
+[![wakatime](https://wakatime.com/badge/github/terrible-terry/HD2-Random-Loadout.svg)](https://wakatime.com/badge/github/terrible-terry/HD2-Random-Loadout)
 Originally copied from [hd2random](https://hd2random.com)
 Improved Output to display Icons of loadout.
 Added a minimum Anti-tank level selector for higher levels.
