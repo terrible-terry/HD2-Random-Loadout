@@ -199,6 +199,15 @@ async function logStratagems() {
       AT: false,
     },
     {
+      name: "MD-8 Gas Mines",
+      isAdvanced: false,
+      type: "Defensive",
+      sequence: ["C_DOWN", "C_LEFT", "C_LEFT", "C_RIGHT"],
+      iconPath: "./assets/Gas_Minefield_Stratagem_Icon.png",
+      AT: false,
+    },
+    
+    {
       name: "LIFT-850 Jump Pack",
       isAdvanced: true,
       type: "Backpack",
@@ -431,12 +440,37 @@ async function logStratagems() {
       AT: "H2",
     },
     {
+      name: "M-102 Reconnaissance Vehicle",
+      isAdvanced: false,
+      type: "Support",
+      sequence: [
+        "C_LEFT",
+        "C_DOWN",
+        "C_RIGHT",
+        "C_DOWN",
+        "C_RIGHT",
+        "C_DOWN",
+        "C_UP",
+
+      ],
+      iconPath: "./assets/M-102_Fast_Recon_Vehicle_Stratagem_Icon.png",
+      AT: false,
+    },
+    {
       name: "RL-77 Airburst Rocket Launcher",
       isAdvanced: true,
       type: "Support",
       sequence: ["C_DOWN", "C_UP", "C_UP", "C_LEFT", "C_RIGHT"],
       iconPath: "./assets/RL-77_Airburst_Rocket_Launcher_Stratagem_Icon.png",
       AT: "M1",
+    },
+    {
+      name: "StA-X3 W.A.S.P. Launcher",
+      isAdvanced: true,
+      type: "Support",
+      sequence: ["C_DOWN", "C_UP", "C_UP", "C_LEFT", "C_RIGHT"],
+      iconPath: "./assets/StA-X3_W.A.S.P._Launcher_Stratagem_Icon.png",
+      AT: "H2",
     },
     {
       name: "MLS-4X Commando",
@@ -492,6 +526,48 @@ async function logStratagems() {
 }
 logStratagems();
 
+/*
+      new Equipment(
+        "StA-52 Assault Rifle",
+        "Primary",
+        "Assault Rifle",
+        "super",
+        "./assets/StA-52_Assault_Rifle_Primary_Weaponry.png"
+      ),
+      new Equipment(
+        "PLAS-39 Accelerator Rifle",
+        "Primary",
+        "Sniper Rifle",
+        "super",
+        "./assets/PLAS-39_Accelerator_Rifle_Primary_Weaponry.png"
+      ),
+            new Equipment(
+        "StA-11 SMG",
+        "Primary",
+        "SMG",
+        "super",
+        "./assets/StA-11_SMG_Primary_Weaponry.png"
+      ),
+      new Equipment(
+        "AC-1 Dutiful",
+        "Armor",
+        "Medium",
+        "super",
+        "./assets/AC-1_Dutiful_Body_Armory.png"
+      ),
+
+
+      new Equipment(
+        "AC-2 Obedient",
+        "Armor",
+        "Light",
+        "super",
+        "./assets/AC-2_Obedient_Body_Armory.png"
+      ),
+
+
+
+ */
 export const warbonds = {
   steeled: {
     name: "Steeled Veterans",
@@ -995,6 +1071,66 @@ export const warbonds = {
     booster: [
     ],
     stratagems:[],
+  },
+  urban: {
+    name: "Urban Legends",
+    primary: [],
+    secondary: [
+      new Equipment(
+      "CQC-19 Stun Lance",
+      "Secondary",
+      "Urban",
+      "urban",
+      "./assets/CQC-19_Stun_Lance_Secondary_Weaponry.png"
+    ),],
+    grenade: [
+    ],
+    armor: [
+      new Equipment(
+        "SR-24 Street Scout",
+        "Armor",
+        "Light",
+        "urban",
+        "./assets/SR-24_Street_Scout_Body_Armory.png"
+      ),
+      new Equipment(
+        "SR-18 roadblock",
+        "Armor",
+        "Heavy",
+        "urban",
+        "./assets/SR-18_Roadblock_Body_Armory.png"
+      )
+    ],
+    booster: [
+      new Stratagem(
+        "Armed Resupply Pods",
+        false,
+        "booster",
+        "urban",
+        "./assets/130px-Experimental_Infusion_Booster_Icon.png"
+      ),
+    ],
+    stratagems:[new Stratagem(
+      "A/Flam-40 Sentry",
+      false,
+      "Defensive",
+      "urban",
+      "./assets/A_FLAM-40_Flame_Sentry_Stratagem_Icon.png"
+    ),new Stratagem(
+      "E/AT-12 Anti-Tank Emplacement",
+      false,
+      "Defensive",
+      "urban",
+      "./assets/E_AT-12_Anti-Tank_Emplacement_Stratagem_Icon.png"
+    ),new Stratagem(
+      "Directional Shield",
+      false,
+      "Support",
+      "urban",
+      "./assets/SH-51_Directional_Shield_Stratagem_Icon.png"
+    )
+  
+  ],
   },
   super: {
     name: "Super Citizen",
