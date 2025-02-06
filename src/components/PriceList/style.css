@@ -1,0 +1,107 @@
+.pricing-switch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  #pricing-toggle {
+    transform: scale(1.2);
+  }
+  .PlanSelected {
+    border: 4px solid #007bff !important;
+  }
+  .pricing-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .MuiButtonBase-root.MuiTab-root.Mui-selected{
+background-color:#007bff !important;
+color:#fff !important;
+  }
+  .MuiButtonBase-root.MuiTab-root{
+    color:#000 !important;
+      }
+
+  .pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .popular {
+    border-color: #007bff;
+  }
+  
+  .popular-badge {
+    background-color: #007bff;
+    color: white;
+    padding: 0.3rem 0.7rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  
+  .plan-name {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .plan-price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .plan-description {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+  }
+  
+  .feature-item {
+    margin: 0.5rem 0;
+    color: #444;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .checkmark {
+    color: green;
+  }
+  
+  .xmark {
+    color: red;
+  }
+  
+  .select-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .select-button:hover {
+    background-color: #0056b3;
+  }

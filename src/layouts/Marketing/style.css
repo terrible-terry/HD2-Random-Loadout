@@ -1,0 +1,275 @@
+.logo-scroller {
+  overflow: hidden;            /* Hide the overflow */
+  white-space: nowrap;        /* Prevent line breaks to allow horizontal scrolling */
+  position: relative;         /* Ensure proper positioning for child elements */
+}
+
+.logo-wrapper {
+  display: flex;              /* Flexbox for horizontal layout */
+  animation: scroll 30s ease-in-out infinite; /* Animation with easing */
+  will-change: transform;     /* Hint for performance */
+}
+
+.logo-item {
+  margin: 0 10px;            /* Space between items (adjust as necessary) */
+}
+
+/* Keyframes for the scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Start at original position */
+  }
+  50% {
+    transform: translateX(-50%); /* Move all the way to the left */
+  }
+  100% {
+    transform: translateX(0); /* Loop back to start position */
+  }
+}
+.logo-scroller {
+  overflow: hidden;            /* Hide the overflow */
+  white-space: nowrap;        /* Prevent line breaks to allow horizontal scrolling */
+  position: relative;         /* Ensure proper positioning for child elements */
+}
+
+.logo-wrapper {
+  display: flex;              /* Flexbox for horizontal layout */
+  animation: scroll 30s ease-in-out infinite; /* Animation with easing */
+  will-change: transform;     /* Hint for performance */
+}
+
+.logo-item {
+  margin: 0 10px;            /* Space between items (adjust as necessary) */
+} 
+
+/* Keyframes for the scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Start at original position */
+  }
+  50% {
+    transform: translateX(-50%); /* Move all the way to the left */
+  }
+  100% {
+    transform: translateX(0); /* Loop back to start position */
+  }
+}
+/* Enhanced General Body Styling */
+body {
+  height: 180vh;
+  font-family: 'Arial', sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  scroll-behavior: smooth;
+  color: #cfd8dc; /* Light text color for contrast */
+}
+
+.updated {
+	color: #ffcc00;
+	padding-left: 2%;
+	font-size: 12px;
+	text-align: left;
+}
+ #SquadSize{
+  margin: 5px;
+ }
+
+ #SquadSize li{
+  border-radius: 5px;
+  padding: 5px;
+ }
+ #SquadSize li input{
+  border-radius: 5px;
+color:black;
+font-weight: bold;
+padding: 5px;
+ }
+/* Container Styling for Centralized Layout */
+.container {
+  max-width: 640px;
+  margin: auto;
+  text-align: center;
+  border: 2px ridge #ffcc00; /* Accent border */
+  border-radius: 16px;
+}
+
+/* Header Section with Distinctive Styling */
+.header {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 8px;
+  margin-bottom: 8px; /* Increased spacing */
+}
+
+.settings-link {
+  text-decoration: none;
+}
+
+.settings-link:hover {
+  text-decoration: none;
+}
+
+.options-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+}
+
+/* Stratagem and Options Sections */
+.stratagem-section, .options-section, .additional-section, .equipment-section {
+  background-color: rgba(0, 0, 0, 0.3); /* Darker background for distinction */
+  border: 2px solid gray;
+  border-radius: 4px; /* Rounded corners */
+  width: 50%;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+#h2_sections {
+	color: rgba(128, 128, 128, 1);
+	text-transform: uppercase;
+	text-align: left;
+	margin-top: -5%;
+	color: #90a4ae;
+	font-weight: 700;
+	text-shadow: 0px 0px 20px rgba(19, 25, 27, 1);  
+	
+}
+
+/* Enhanced Result Section Styling */
+#results-section {
+  font-size: 12px;
+  padding-bottom: 5%;
+  margin-top: 16px; /* Ensure it stands out from other sections */
+  background-color: rgba(255, 255, 255, 0.1); /* Lighter and distinct background */
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Subtle shadow for depth */
+  color: #ffeb3b; /* Bright text color for contrast and emphasis */
+}
+
+#resultField {
+  margin-top: 5%;
+  background-color: rgba(0, 0, 0, 0.3); /* Darker for contrast against the section background */
+  color: #cfd8dc; /* Ensuring text stands out */
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#randomizeButton {
+  background-image: repeating-linear-gradient(45deg, rgba(204, 176, 0, 0.3), rgba(204, 176, 0, 0.3) 1px,transparent 5px, transparent 5px);
+  background-color: rgba(16, 16, 16, 0.5);
+  border: #ffcc00 solid 3px; /* Removes default border */
+  color: #ffcc00; /* Text color */
+  padding: 15px 32px; /* Size of the button */
+  text-align: center; /* Aligns text to the center */
+  text-decoration: none; /* Removes underline from text */
+  display: inline-block; /* Allows setting dimensions */
+  font-size: 16px; /* Text size */
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 4px 4px 4px 4px; /* Adds margin around the button */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  border-radius: 10px; /* Rounds the corners */
+  box-shadow: 0 0 2px yellow; /* Subtle yellow glow */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#randomizeButton:hover {
+  border: white solid 3px; /* Light gray background on hover */
+  color: white;
+  box-shadow: 0 0 16px white; /* Enhanced yellow glow on hover */
+}
+
+/* Enhance readability and interaction */
+h1, h2, h4 {
+  color: #ffcc00; /* Consistent accent color for titles */
+}
+
+/* Checkbox Label Enhancement */
+.checkbox-group label {
+  display: inline-block;
+  background-color: rgba(255, 204, 0, 0.2); /* Light background for labels */
+  margin-top: -5%;
+  margin-bottom: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.checkbox-group label:hover {
+  background-color: rgba(255, 204, 0, 0.4); /* Darker on hover for interactivity */
+}
+
+.custom-checkbox input[type="checkbox"] {
+  display: none; /* Hide checkbox */
+}
+
+.warbondinput{
+  display: none; /* Hide checkbox */
+}
+.warbondlabel{
+  background-color: rgba(128, 128, 128, 0.75); /* Default background color, changes based on checkbox state */
+  padding: 10px 20px; /* Increased padding for a larger clickable area */
+  border-radius: 5px; /* Rounds the corners of the label */
+  cursor: pointer; /* Changes cursor to indicate clickable items */
+  font-size: 16px; /* Larger font size for better readability */
+  font-weight: bold; /* Makes the font bold */
+  color: black; /* Changes text color for better contrast with the background */
+  margin-right: 10px; /* Adds space between the labels */
+  display: inline-block; /* Ensures proper spacing and alignment */
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+.custom-checkbox label {
+  background-color: rgba(128, 128, 128, 0.75); /* Default background color, changes based on checkbox state */
+  padding: 10px 20px; /* Increased padding for a larger clickable area */
+  border-radius: 5px; /* Rounds the corners of the label */
+  cursor: pointer; /* Changes cursor to indicate clickable items */
+  font-size: 16px; /* Larger font size for better readability */
+  font-weight: bold; /* Makes the font bold */
+  color: black; /* Changes text color for better contrast with the background */
+  margin-right: 10px; /* Adds space between the labels */
+  display: inline-block; /* Ensures proper spacing and alignment */
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+.custom-checkbox input[type="checkbox"]:checked + label:hover {
+  box-shadow: 0px 0px 24px #FFD700; /* Change the background color on hover */
+  transition: box-shadow 0.1s ease; /* Add transition for smoother effect */
+}
+
+.custom-checkbox input[type="checkbox"]:not(:checked) + label:hover {
+  background-color: gray;
+  box-shadow: 0px 0px 12px white; /* Change the background color on hover */
+  transition: box-shadow 0.1s ease; /* Add transition for smoother effect */
+  transition: background-color 0.25s ease;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + label {
+  background-color: #FFD700; /* Background color when checked */
+  color: black;
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 100%; /* Erweitert die Breite auf kleineren Bildschirmen */
+		padding: 0px 0px 0px 0px;
+    }
+
+	html {
+		font-size: 10px;
+	}
+	
+	.custom-checkbox label {
+		font-size: 12px;
+		padding: 8px 8px;
+	}
+	
+	.checkbox-group label {
+		margin: 4px 4px;
+		padding: 8px 8px;	
+	}
+  
+  #resultField {
+    font-size: 16px;
+  }
+
+}

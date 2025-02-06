@@ -1,0 +1,9 @@
+[
+  {
+    "origin": ["http://localhost:3000", "https://br4j98xg-3000.use.devtunnels.ms","http://react2.waltekltd.org/","https://optim-50a60.firebaseapp.com"],
+    "method": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    "maxAgeSeconds": 3600
+
+
+  }
+]

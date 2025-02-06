@@ -1,0 +1,1 @@
+gsutil cors set "C:\Users\taylor\Documents\React Sites\Optim\cors.json" gs://optim-50a60.appspot.com
